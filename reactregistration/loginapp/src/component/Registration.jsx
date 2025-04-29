@@ -16,7 +16,7 @@ function Registration() {
             headers:{'Content-Type':'application/json'}
         })
        const res= await response.json();
-        alert(res.message);
+        alert(res.msg);
     }
   return (
     <div>Registration
