@@ -4,6 +4,13 @@ function Home() {
   return (
     <div style={{backgroundColor:'brown', color:'white', fontSize:'40px'}}>Welcome to Student management APP
     <nav>
+    <div>
+    <ul>
+    <li>
+        <Link to='/studentadmin'>Admin Console </Link>
+    </li>
+    </ul>
+    </div>
     <ul>
     <li>
         <Link to='/login'>Login </Link>
@@ -14,7 +21,7 @@ function Home() {
     </li>
 
     </ul>
-
+  
     </nav>
     <Outlet />
     </div>

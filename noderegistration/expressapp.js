@@ -54,9 +54,11 @@ app.get("/admin/showByEmail/:email",async(req,res)=>{
     const emailid=req.params.email;
     let arr=[];
     //console.log(emailid);
-    const data=await fs.readFile('student.json',{encoding:'utf-8'})
-    arr=JSON.parse(data);
-    const status=arr.find(ele=>ele.email==emailid);
+    //const data=await fs.readFile('student.json',{encoding:'utf-8'})
+    
+    //arr=JSON.parse(data);
+    const status=await student.findOne({email:emailid})
+    //const status=arr.find(ele=>ele.email==emailid);
     if(!status){
         res.json({msg:"Email is not registered in database"})
     }
