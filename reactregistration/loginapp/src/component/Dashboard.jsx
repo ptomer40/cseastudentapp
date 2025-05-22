@@ -2,7 +2,7 @@ import React from 'react'
 
 function Dashboard() {
   return (
-    <div style={{color:'green', backgroundColor:'white'}}>Welcome to Dashboard</div>
+    <div style={{color:'cyan', backgroundColor:'white'}}>Welcome to Dashboard</div>
   )
 }
 
